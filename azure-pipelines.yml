@@ -47,7 +47,7 @@ resources:
       type: github
       name: espressif/esp-idf
       endpoint: nanoframework
-      ref: refs/tags/v4.3.2
+      ref: refs/tags/v4.4
       
 jobs:
 
@@ -326,7 +326,7 @@ jobs:
           -DAPI_Windows.Devices.Pwm=ON -DAPI_System.Device.Pwm=ON
           -DAPI_Windows.Devices.SerialCommunication=ON -DAPI_System.IO.Ports=ON
           -DAPI_Windows.Devices.Adc=ON -DAPI_System.Device.Adc=ON
-          -DAPI_nanoFramework.Devices.OneWire=ON
+          -DAPI_nanoFramework.Device.OneWire=ON
           -DAPI_nanoFramework.Devices.Can=ON
           -DAPI_nanoFramework.ResourceManager=ON
           -DAPI_nanoFramework.System.Collections=ON
@@ -357,7 +357,7 @@ jobs:
           -DAPI_System.Device.Dac=ON
           -DAPI_System.Net=ON
           -DNF_SECURITY_MBEDTLS=ON
-          -DAPI_nanoFramework.Devices.OneWire=ON
+          -DAPI_nanoFramework.Device.OneWire=ON
           -DAPI_nanoFramework.Devices.Can=ON
           -DAPI_System.IO.FileSystem=ON
           -DAPI_nanoFramework.ResourceManager=ON
@@ -441,7 +441,7 @@ jobs:
           -DAPI_System.Net=ON
           -DAPI_System.Device.WiFi=ON
           -DAPI_Hardware.Esp32=ON
-          -DAPI_nanoFramework.Devices.OneWire=ON
+          -DAPI_nanoFramework.Device.OneWire=ON
           -DAPI_nanoFramework.ResourceManager=ON
           -DAPI_nanoFramework.System.Collections=ON
           -DAPI_nanoFramework.System.Text=ON
@@ -482,7 +482,7 @@ jobs:
           -DAPI_System.Net=ON
           -DAPI_System.Device.WiFi=ON
           -DAPI_Hardware.Esp32=ON
-          -DAPI_nanoFramework.Devices.OneWire=ON
+          -DAPI_nanoFramework.Device.OneWire=ON
           -DAPI_nanoFramework.ResourceManager=ON
           -DAPI_nanoFramework.System.Collections=ON
           -DAPI_nanoFramework.System.Text=ON
@@ -519,7 +519,7 @@ jobs:
           -DAPI_System.Net=ON
           -DAPI_System.Device.WiFi=ON
           -DAPI_Hardware.Esp32=ON
-          -DAPI_nanoFramework.Devices.OneWire=ON
+          -DAPI_nanoFramework.Device.OneWire=ON
           -DAPI_nanoFramework.ResourceManager=ON
           -DAPI_nanoFramework.System.Collections=ON
           -DAPI_nanoFramework.System.Text=ON
@@ -777,7 +777,7 @@ jobs:
           -DAPI_Windows.Devices.Adc=ON -DAPI_System.Device.Adc=ON
           -DAPI_nanoFramework.TI.EasyLink=ON
           -DAPI_nanoFramework.Hardware.TI=ON
-
+          -DAPI_nanoFramework.System.Text=ON
         GccArm_Version:
 
   variables:
